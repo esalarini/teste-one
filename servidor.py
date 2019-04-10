@@ -1,6 +1,5 @@
 import os
 from flask import Flask, render_template, request, redirect
-import json, requests
 from modulos import verificaRef as vr
 
 app=Flask(__name__)
