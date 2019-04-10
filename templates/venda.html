@@ -1,0 +1,25 @@
+{% extends "head.html" %}
+{% block conteudo %}
+        
+        <form action="/status" method="post">
+            <fieldset>
+            <div class="row">
+                VENDA
+                <div class="col">
+                        <form action="/criar">
+                            <fieldset>
+                              <div class="form-group">
+                                <label for="nome">Referência</label>
+                                <input type="text" id="ref" name="ref" class="form-control">
+                              </div>
+                              
+                              <button type="submit" class="btn btn-primary btn-salvar">Pesquisar</button>
+                            </fieldset>
+                          </form>
+                </div>
+            </div>
+            </fieldset>
+          </form>
+        </div>
+
+{% endblock %}
