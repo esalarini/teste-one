@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, redirect
 import json, requests
 from modulos import verificaRef as vr
@@ -28,4 +29,6 @@ def listar():
     return render_template('listar.html', statuss=resposta)
 
 
-app.run(host="0.0.0.0", port=5000, debug=True) 
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
